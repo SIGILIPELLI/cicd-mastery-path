@@ -1,0 +1,109 @@
+site_name: CI/CD Mastery Path
+site_description: "A free CI/CD course on GitHub Actions and Jenkins covering pipelines, testing gates, caching, secrets, deployment strategies, GitOps, supply-chain security and operating pipelines at scale."
+site_url: https://sigilipelli.github.io/cicd-mastery-path/
+repo_url: https://github.com/sigilipelli/cicd-mastery-path
+repo_name: cicd-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · Pipeline Foundations":
+      - Overview: level-1/index.md
+      - "01 · What CI/CD Is and Why Pipelines Exist": level-1/01-what-ci-cd-is.md
+      - "02 · Pipeline Anatomy: Triggers, Jobs, Steps & Stages": level-1/02-pipeline-anatomy.md
+      - "03 · GitHub Actions Essentials": level-1/03-github-actions-essentials.md
+      - "04 · Jenkins Essentials and the Jenkinsfile": level-1/04-jenkins-essentials.md
+      - "05 · Testing Gates and Fast Feedback": level-1/05-testing-gates.md
+      - "06 · Reproducible Builds and Caching": level-1/06-reproducible-builds-caching.md
+      - "07 · Artifacts, Registries and Versioning": level-1/07-artifacts-versioning.md
+      - "08 · Secrets in Pipelines": level-1/08-secrets-in-pipelines.md
+      - "09 · Branching Strategies and Pull Request Checks": level-1/09-branching-pr-checks.md
+      - "10 · Project — A Local CI Runner You Can Run": level-1/10-project-local-ci-runner.md
+  - "Level 2 · Pipelines in Depth":
+      - Overview: level-2/index.md
+      - "01 · Matrix Builds and Parallelism": level-2/01-matrix-parallelism.md
+      - "02 · Designing Caches That Help": level-2/02-cache-design.md
+      - "03 · Reusable Workflows and Shared Libraries": level-2/03-reusable-pipelines.md
+      - "04 · Containers and Service Dependencies in CI": level-2/04-containers-in-ci.md
+      - "05 · Test Reports and Flaky Tests": level-2/05-test-reports-flaky.md
+      - "06 · Quality Gates: Lint, Coverage and Security Scans": level-2/06-quality-gates.md
+      - "07 · Environments, Approvals and Promotion": level-2/07-environments-approvals.md
+      - "08 · Runners, Agents and Isolation": level-2/08-runners-agents.md
+      - "09 · Monorepos and Path Filters": level-2/09-monorepos-path-filters.md
+      - "10 · Project — A Workflow Linter with Tests": level-2/10-project-workflow-linter.md
+  - "Level 3 · Delivery and Deployment":
+      - Overview: level-3/index.md
+      - "01 · Deployment Strategies: Rolling, Blue-Green, Canary": level-3/01-deployment-strategies.md
+      - "02 · Feature Flags and Progressive Delivery": level-3/02-feature-flags.md
+      - "03 · Database Migrations in Continuous Delivery": level-3/03-database-migrations.md
+      - "04 · Rollbacks and Roll-Forward": level-3/04-rollbacks.md
+      - "05 · Infrastructure Pipelines: Plan, Review, Apply": level-3/05-infrastructure-pipelines.md
+      - "06 · GitOps and Pull-Based Delivery": level-3/06-gitops.md
+      - "07 · Release Management and Changelogs": level-3/07-release-management.md
+      - "08 · Supply-Chain Security: Pinning, SBOMs and Signing": level-3/08-supply-chain-security.md
+      - "09 · Measuring Delivery: DORA Metrics": level-3/09-dora-metrics.md
+      - "10 · Project — A Canary Analysis Simulator": level-3/10-project-canary-simulator.md
+  - "Level 4 · Operating Pipelines at Scale":
+      - Overview: level-4/index.md
+      - "01 · A Threat Model for CI/CD": level-4/01-pipeline-threat-model.md
+      - "02 · Pipeline Speed and Cost": level-4/02-speed-and-cost.md
+      - "03 · Jenkins at Scale: Agents, Libraries and Configuration as Code": level-4/03-jenkins-at-scale.md
+      - "04 · GitHub Actions at Scale: OIDC, Policies and Organization Controls": level-4/04-actions-at-scale.md
+      - "05 · Audit Trails and Compliance": level-4/05-audit-compliance.md
+      - "06 · Testing the Pipeline Itself": level-4/06-testing-pipelines.md
+      - "07 · When the Pipeline Breaks: Incident Response": level-4/07-pipeline-incidents.md
+      - "08 · Migrating Between CI Systems": level-4/08-migrating-ci.md
+      - "09 · Platform Engineering and Golden Paths": level-4/09-golden-paths.md
+      - "10 · Capstone — A Delivery Platform Plan and Checker": level-4/10-capstone-delivery-platform.md

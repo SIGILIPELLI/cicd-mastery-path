@@ -1,0 +1,13 @@
+from semrel import classify, bump
+def test_fix(): assert classify("fix: handle empty input") == "patch"
+def test_feat(): assert classify("feat(api): add export") == "minor"
+def test_bang(): assert classify("feat!: drop python 3.8") == "major"
+def test_footer(): assert classify("refactor: x\n\nBREAKING CHANGE: removes --old flag") == "major"
+def test_chore_none(): assert classify("chore: bump deps") == "none" and classify("docs: typo") == "none"
+def test_unparseable_ignored(): assert classify("fixed some stuff") == "none"
+def test_highest_wins(): assert bump("1.4.2", ["fix: a", "feat: b", "chore: c"]) == "1.5.0"
+def test_major_resets(): assert bump("1.4.2", ["fix: a", "feat!: b"]) == "2.0.0"
+def test_patch_only(): assert bump("1.4.2", ["fix: a", "perf: b"]) == "1.4.3"
+def test_no_release(): assert bump("1.4.2", ["docs: a", "chore: b"]) == "1.4.2"
+def test_pre_1_0_breaking_bumps_minor(): assert bump("0.3.1", ["feat!: x"]) == "0.4.0"
+def test_not_fooled_by_word_in_description(): assert classify("fix: BREAKING CHANGE: is mentioned in text") == "patch"

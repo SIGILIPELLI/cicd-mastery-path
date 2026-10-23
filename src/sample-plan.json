@@ -1,0 +1,1 @@
+{"resource_changes": [{"address": "aws_s3_bucket.logs", "change": {"actions": ["no-op"]}}, {"address": "aws_instance.web", "change": {"actions": ["update"]}}, {"address": "aws_db_instance.main", "change": {"actions": ["delete", "create"]}}, {"address": "aws_sns_topic.old", "change": {"actions": ["delete"]}}, {"address": "aws_sqs_queue.q", "change": {"actions": ["create"]}}]}

@@ -1,0 +1,20 @@
+env: {PYTHONDONTWRITEBYTECODE: "1"}
+jobs:
+  deps:
+    cache: {key_files: [requirements.txt], paths: [libs]}
+    steps:
+      - {name: install dependencies (slow step, 2 s), run: "if [ ! -d libs ]; then sleep 2; mkdir libs; echo built > libs/marker; echo 'installed'; else echo 'restored from cache'; fi", show: true}
+  lint:
+    steps: [{name: syntax check, run: "python3 -m py_compile app/calc.py tests/test_calc.py"}]
+  test:
+    needs: [deps, lint]
+    strategy: {matrix: {tz: [UTC, Asia/Kolkata, America/New_York]}}
+    steps:
+      - {name: "tests under ${{ matrix.tz }}", run: "TZ=${{ matrix.tz }} python3 -m pytest -q -p no:cacheprovider tests", show: true}
+  package:
+    needs: [test]
+    artifacts: ["*.tar.gz"]
+    steps: [{name: build artifact, run: "tar -czf app-1.0.0.tar.gz app"}]
+  deploy:
+    needs: [package]
+    steps: [{name: "deploy (simulated)", run: "echo deploying app-1.0.0.tar.gz", show: true}]

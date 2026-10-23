@@ -1,0 +1,45 @@
+pipeline {
+    agent { label 'linux && docker' }
+    options {
+        timeout(time: 30, unit: 'MINUTES')
+        timestamps()
+        disableConcurrentBuilds()
+        buildDiscarder(logRotator(numToKeepStr: '30'))
+    }
+    environment {
+        APP_VERSION = "1.4.${env.BUILD_NUMBER}"
+    }
+    stages {
+        stage('Checkout') {
+            steps { checkout scm }
+        }
+        stage('Build and Test') {
+            parallel {
+                stage('Unit tests') {
+                    steps { sh 'python3 -m pytest -q' }
+                }
+                stage('Lint') {
+                    steps { sh 'python3 -m py_compile app/*.py' }
+                }
+            }
+        }
+        stage('Package') {
+            steps {
+                sh 'tar -czf app-${APP_VERSION}.tar.gz app'
+                archiveArtifacts artifacts: 'app-*.tar.gz', fingerprint: true
+            }
+        }
+        stage('Deploy to staging') {
+            when { branch 'main' }
+            steps {
+                withCredentials([string(credentialsId: 'staging-deploy-token', variable: 'TOKEN')]) {
+                    sh './deploy.sh staging "$TOKEN"'
+                }
+            }
+        }
+    }
+    post {
+        always { junit allowEmptyResults: true, testResults: 'reports/*.xml' }
+        failure { echo 'Build failed: notify the team' }
+    }
+}
