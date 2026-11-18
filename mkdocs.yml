@@ -1,6 +1,6 @@
 site_name: CI/CD Mastery Path
 site_description: "A free CI/CD course on GitHub Actions and Jenkins covering pipelines, testing gates, caching, secrets, deployment strategies, GitOps, supply-chain security and operating pipelines at scale."
-site_url: https://sigilipelli.github.io/cicd-mastery-path/
+site_url: https://learnmasterypath.com/cicd-mastery-path/
 repo_url: https://github.com/sigilipelli/cicd-mastery-path
 repo_name: cicd-mastery-path
 

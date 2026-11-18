@@ -4,7 +4,7 @@ description: "GitHub Actions essentials: workflows, events, jobs, steps, context
 
 # 03 · GitHub Actions Essentials
 
-GitHub Actions is the CI/CD system built into GitHub: pipelines are YAML files in `.github/workflows/`, triggered by repository events, run on GitHub-hosted or self-hosted runners. This lesson covers the parts you need to read and write real workflows; the full feature tour (Marketplace, packages, Pages, issue automation) belongs to the [GitHub & Git Mastery Path](https://sigilipelli.github.io/github-mastery-path/), which this course does
+GitHub Actions is the CI/CD system built into GitHub: pipelines are YAML files in `.github/workflows/`, triggered by repository events, run on GitHub-hosted or self-hosted runners. This lesson covers the parts you need to read and write real workflows; the full feature tour (Marketplace, packages, Pages, issue automation) belongs to the [GitHub & Git Mastery Path](https://learnmasterypath.com/github-mastery-path/), which this course does
 not duplicate.
 
 !!! note "What was run"

@@ -10,7 +10,7 @@ Level 1 builds the mental model: why continuous integration and delivery exist, 
     **No GitHub Actions runner and no Jenkins server were available**, so no workflow or Jenkinsfile was executed by its real system. Their syntax and limits come from official documentation (docs.github.com and jenkins.io, October 2026) and are marked "not run". The concepts are demonstrated with real runs of **`minici`, a local CI runner written for this course** (not a clone of either product), with a Jenkinsfile linter, a secret scanner, and measured experiments
     with `git`, `tar` and `pytest` on macOS. Each lesson says which is which.
 
-**Prerequisites:** basic Git and a programming language. The [GitHub & Git Mastery Path](https://sigilipelli.github.io/github-mastery-path/) covers repositories, pull requests and Actions in more breadth; the [Docker Mastery Path](https://sigilipelli.github.io/docker-mastery-path/) covers containers.
+**Prerequisites:** basic Git and a programming language. The [GitHub & Git Mastery Path](https://learnmasterypath.com/github-mastery-path/) covers repositories, pull requests and Actions in more breadth; the [Docker Mastery Path](https://learnmasterypath.com/docker-mastery-path/) covers containers.
 
 ## Modules
 
