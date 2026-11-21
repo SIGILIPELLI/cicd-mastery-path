@@ -53,9 +53,11 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/progress-tracker.css
+  - stylesheets/final-quiz.css
 
 extra_javascript:
   - javascripts/progress-tracker.js
+  - javascripts/final-quiz.js
 
 
 
@@ -127,3 +129,5 @@ nav:
       - "08 · Migrating Between CI Systems": level-4/08-migrating-ci.md
       - "09 · Platform Engineering and Golden Paths": level-4/09-golden-paths.md
       - "10 · Capstone — A Delivery Platform Plan and Checker": level-4/10-capstone-delivery-platform.md
+  - "🎯 Final Quiz": quiz.md
+
