@@ -83,8 +83,8 @@ not_in_nav: |
 
 nav:
   - Home: index.md
-  - "💼 Interview Questions": interview-questions.md
-  - "📋 Cheat Sheet": cheat-sheet.md
+  - Interview Questions: interview-questions.md
+  - Cheat Sheet: cheat-sheet.md
   - "Level 1 · Pipeline Foundations":
       - Overview: level-1/index.md
       - "01 · What CI/CD Is and Why Pipelines Exist": level-1/01-what-ci-cd-is.md
@@ -133,5 +133,5 @@ nav:
       - "08 · Migrating Between CI Systems": level-4/08-migrating-ci.md
       - "09 · Platform Engineering and Golden Paths": level-4/09-golden-paths.md
       - "10 · Capstone — A Delivery Platform Plan and Checker": level-4/10-capstone-delivery-platform.md
-  - "🎯 Final Quiz": quiz.md
+  - Final Quiz: quiz.md
 
