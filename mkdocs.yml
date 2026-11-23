@@ -77,12 +77,14 @@ extra:
     - name: "Kubernetes"
       url: https://learnmasterypath.com/kubernetes-mastery-path/
 
+not_in_nav: |
+  privacy.md
+  license.md
+
 nav:
   - Home: index.md
   - "💼 Interview Questions": interview-questions.md
   - "📋 Cheat Sheet": cheat-sheet.md
-  - Privacy Policy: privacy.md
-  - License: license.md
   - "Level 1 · Pipeline Foundations":
       - Overview: level-1/index.md
       - "01 · What CI/CD Is and Why Pipelines Exist": level-1/01-what-ci-cd-is.md
