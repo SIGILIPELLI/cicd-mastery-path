@@ -1,0 +1,4206 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="179 CI/CD interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the CI/CD Mastery Path.">
+      
+      
+      
+        <link rel="canonical" href="https://learnmasterypath.com/cicd-mastery-path/interview-questions/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../cheat-sheet/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+  
+  <title>CI/CD Interview Questions and Answers (179 Questions)</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/progress-tracker.css">
+    
+      <link rel="stylesheet" href="../stylesheets/final-quiz.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mastery Path">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="CI/CD Interview Questions and Answers (179 Questions)">
+  <meta property="og:description" content="179 CI/CD interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the CI/CD Mastery Path.">
+  <meta property="og:url" content="https://learnmasterypath.com/cicd-mastery-path/interview-questions/">
+  <meta property="og:image" content="https://learnmasterypath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mastery Path: free structured courses, beginner to master">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CI/CD Interview Questions and Answers (179 Questions)">
+  <meta name="twitter:description" content="179 CI/CD interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the CI/CD Mastery Path.">
+  <meta name="twitter:image" content="https://learnmasterypath.com/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Mastery Path", "item": "https://learnmasterypath.com/"},
+      {"@type": "ListItem", "position": 2, "name": "CI/CD Mastery Path", "item": "https://learnmasterypath.com/cicd-mastery-path/"},
+      {"@type": "ListItem", "position": 3, "name": "Interview Questions", "item": "https://learnmasterypath.com/cicd-mastery-path/interview-questions/"}
+    ]
+  }
+  </script>
+  <style>
+    .md-banner a:hover { text-decoration: underline !important; }
+    .mp-related { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .78rem; }
+    .mp-related h2 { font-size: .9rem; margin: 0 0 .5rem; }
+    .mp-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+    .mp-related li { margin: 0 !important; }
+  </style>
+  <script type="application/json" id="mp-course-meta">{"home": false, "id": "cicd-mastery-path", "name": "CI/CD Mastery Path", "repo": "https://github.com/sigilipelli/cicd-mastery-path", "src": "interview-questions.md", "url": "https://learnmasterypath.com/cicd-mastery-path/"}</script>
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/learn.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/course.css?v=1">
+  <script src="https://learnmasterypath.com/assets/learn.js" defer></script>
+  <script src="https://learnmasterypath.com/assets/signup.js" defer></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cicd-interview-questions-and-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://learnmasterypath.com/" style="color: inherit; text-decoration: none;">
+    &larr; Mastery Path &middot; all 100+ free courses
+  </a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/search/" style="color: inherit; text-decoration: none;">Search all courses</a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/resume/" style="color: inherit; font-weight: 700; text-decoration: none;">
+    Got the skills? Free resume ATS check &rarr;
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CI/CD Mastery Path" class="md-header__button md-logo" aria-label="CI/CD Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CI/CD Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CI/CD Interview Questions and Answers (179 Questions)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sigilipelli/cicd-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cicd-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Interview Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cheat-sheet/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cheat Sheet
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Pipeline Foundations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Pipelines in Depth
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Delivery and Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Operating Pipelines at Scale
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quiz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Final Quiz
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CI/CD Mastery Path" class="md-nav__button md-logo" aria-label="CI/CD Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    CI/CD Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sigilipelli/cicd-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cicd-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-pipeline-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Pipeline Foundations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Pipeline Foundations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-cicd-is-and-why-pipelines-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What CI/CD Is and Why Pipelines Exist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-pipeline-anatomy-triggers-jobs-steps-stages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Pipeline Anatomy: Triggers, Jobs, Steps &amp; Stages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-github-actions-essentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · GitHub Actions Essentials
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-jenkins-essentials-and-the-jenkinsfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Jenkins Essentials and the Jenkinsfile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-testing-gates-and-fast-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Testing Gates and Fast Feedback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-reproducible-builds-and-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Reproducible Builds and Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-artifacts-registries-and-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Artifacts, Registries and Versioning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-secrets-in-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Secrets in Pipelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-branching-strategies-and-pull-request-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Branching Strategies and Pull Request Checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-local-ci-runner-you-can-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Local CI Runner You Can Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-pipelines-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Pipelines in Depth
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Pipelines in Depth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-matrix-builds-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Matrix Builds &amp; Parallelism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-cache-design-keys-scope-poisoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Cache Design: Keys, Scope &amp; Poisoning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-reusable-pipelines-workflows-actions-shared-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Reusable Pipelines: Workflows, Actions &amp; Shared Libraries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-containers-in-ci-images-services-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Containers in CI: Images, Services &amp; Readiness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-test-reports-flaky-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Test Reports &amp; Flaky Tests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-quality-gates-coverage-lint-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Quality Gates: Coverage, Lint &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-environments-approvals-concurrency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Environments, Approvals &amp; Concurrency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-runners-agents-where-your-jobs-actually-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Runners &amp; Agents: Where Your Jobs Actually Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-monorepos-path-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Monorepos &amp; Path Filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-workflow-linter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Workflow Linter
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-delivery-release-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Delivery &amp; Release Engineering
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Delivery &amp; Release Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-deployment-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Deployment Strategies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-feature-flags-decoupling-deploy-from-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Feature Flags: Decoupling Deploy from Release
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-database-migrations-expand-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Database Migrations: Expand &amp; Contract
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-rollbacks-going-back-and-when-you-cannot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Rollbacks: Going Back, and When You Cannot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-infrastructure-pipelines-plan-review-apply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Infrastructure Pipelines: Plan, Review, Apply
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-gitops-reconciling-desired-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · GitOps: Reconciling Desired State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-release-management-versions-changelogs-trains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Release Management: Versions, Changelogs &amp; Trains
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-supply-chain-security-for-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Supply-Chain Security for Pipelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-measuring-delivery-the-dora-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Measuring Delivery: The DORA Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-canary-release-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Canary Release Simulator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-pipelines-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Pipelines at Scale
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Pipelines at Scale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-threat-modelling-the-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Threat-Modelling the Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-speed-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Speed &amp; Cost
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-jenkins-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Jenkins at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-github-actions-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · GitHub Actions at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-audit-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Audit &amp; Compliance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-testing-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Testing Pipelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-pipeline-incidents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Pipeline Incidents
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-migrating-ci-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Migrating CI Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-golden-paths-making-the-right-way-the-easy-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Golden Paths: Making the Right Way the Easy Way
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-a-release-readiness-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — A Release-Readiness Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expand-a-build-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expand a build matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#critical-path-and-billed-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critical path and billed minutes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheat-sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Pipeline Foundations
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Pipeline Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/01-what-ci-cd-is/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · What CI/CD Is and Why Pipelines Exist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/02-pipeline-anatomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Pipeline Anatomy: Triggers, Jobs, Steps & Stages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/03-github-actions-essentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · GitHub Actions Essentials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/04-jenkins-essentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Jenkins Essentials and the Jenkinsfile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/05-testing-gates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Testing Gates and Fast Feedback
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/06-reproducible-builds-caching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Reproducible Builds and Caching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/07-artifacts-versioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Artifacts, Registries and Versioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/08-secrets-in-pipelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Secrets in Pipelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/09-branching-pr-checks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Branching Strategies and Pull Request Checks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/10-project-local-ci-runner/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Local CI Runner You Can Run
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Pipelines in Depth
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Pipelines in Depth
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/01-matrix-parallelism/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Matrix Builds and Parallelism
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/02-cache-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Designing Caches That Help
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/03-reusable-pipelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Reusable Workflows and Shared Libraries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/04-containers-in-ci/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Containers and Service Dependencies in CI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/05-test-reports-flaky/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Test Reports and Flaky Tests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/06-quality-gates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Quality Gates: Lint, Coverage and Security Scans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/07-environments-approvals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Environments, Approvals and Promotion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/08-runners-agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Runners, Agents and Isolation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/09-monorepos-path-filters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Monorepos and Path Filters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/10-project-workflow-linter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Workflow Linter with Tests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Delivery and Deployment
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Delivery and Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/01-deployment-strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Deployment Strategies: Rolling, Blue-Green, Canary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/02-feature-flags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Feature Flags and Progressive Delivery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/03-database-migrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Database Migrations in Continuous Delivery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/04-rollbacks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Rollbacks and Roll-Forward
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/05-infrastructure-pipelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Infrastructure Pipelines: Plan, Review, Apply
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/06-gitops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · GitOps and Pull-Based Delivery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/07-release-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Release Management and Changelogs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/08-supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Supply-Chain Security: Pinning, SBOMs and Signing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/09-dora-metrics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Measuring Delivery: DORA Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/10-project-canary-simulator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Canary Analysis Simulator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Operating Pipelines at Scale
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Operating Pipelines at Scale
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/01-pipeline-threat-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · A Threat Model for CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/02-speed-and-cost/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Pipeline Speed and Cost
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/03-jenkins-at-scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Jenkins at Scale: Agents, Libraries and Configuration as Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/04-actions-at-scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · GitHub Actions at Scale: OIDC, Policies and Organization Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/05-audit-compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Audit Trails and Compliance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/06-testing-pipelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Testing the Pipeline Itself
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/07-pipeline-incidents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · When the Pipeline Breaks: Incident Response
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/08-migrating-ci/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Migrating Between CI Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/09-golden-paths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Platform Engineering and Golden Paths
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/10-capstone-delivery-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — A Delivery Platform Plan and Checker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-pipeline-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Pipeline Foundations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Pipeline Foundations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-cicd-is-and-why-pipelines-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What CI/CD Is and Why Pipelines Exist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-pipeline-anatomy-triggers-jobs-steps-stages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Pipeline Anatomy: Triggers, Jobs, Steps &amp; Stages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-github-actions-essentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · GitHub Actions Essentials
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-jenkins-essentials-and-the-jenkinsfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Jenkins Essentials and the Jenkinsfile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-testing-gates-and-fast-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Testing Gates and Fast Feedback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-reproducible-builds-and-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Reproducible Builds and Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-artifacts-registries-and-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Artifacts, Registries and Versioning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-secrets-in-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Secrets in Pipelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-branching-strategies-and-pull-request-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Branching Strategies and Pull Request Checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-local-ci-runner-you-can-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Local CI Runner You Can Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-pipelines-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Pipelines in Depth
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Pipelines in Depth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-matrix-builds-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Matrix Builds &amp; Parallelism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-cache-design-keys-scope-poisoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Cache Design: Keys, Scope &amp; Poisoning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-reusable-pipelines-workflows-actions-shared-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Reusable Pipelines: Workflows, Actions &amp; Shared Libraries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-containers-in-ci-images-services-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Containers in CI: Images, Services &amp; Readiness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-test-reports-flaky-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Test Reports &amp; Flaky Tests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-quality-gates-coverage-lint-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Quality Gates: Coverage, Lint &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-environments-approvals-concurrency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Environments, Approvals &amp; Concurrency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-runners-agents-where-your-jobs-actually-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Runners &amp; Agents: Where Your Jobs Actually Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-monorepos-path-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Monorepos &amp; Path Filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-workflow-linter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Workflow Linter
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-delivery-release-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Delivery &amp; Release Engineering
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Delivery &amp; Release Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-deployment-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Deployment Strategies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-feature-flags-decoupling-deploy-from-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Feature Flags: Decoupling Deploy from Release
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-database-migrations-expand-contract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Database Migrations: Expand &amp; Contract
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-rollbacks-going-back-and-when-you-cannot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Rollbacks: Going Back, and When You Cannot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-infrastructure-pipelines-plan-review-apply" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Infrastructure Pipelines: Plan, Review, Apply
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-gitops-reconciling-desired-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · GitOps: Reconciling Desired State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-release-management-versions-changelogs-trains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Release Management: Versions, Changelogs &amp; Trains
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-supply-chain-security-for-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Supply-Chain Security for Pipelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-measuring-delivery-the-dora-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Measuring Delivery: The DORA Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-canary-release-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Canary Release Simulator
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-pipelines-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Pipelines at Scale
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Pipelines at Scale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-threat-modelling-the-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Threat-Modelling the Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-speed-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Speed &amp; Cost
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-jenkins-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Jenkins at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-github-actions-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · GitHub Actions at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-audit-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Audit &amp; Compliance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-testing-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Testing Pipelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-pipeline-incidents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Pipeline Incidents
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-migrating-ci-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Migrating CI Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-golden-paths-making-the-right-way-the-easy-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Golden Paths: Making the Right Way the Easy Way
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-a-release-readiness-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — A Release-Readiness Check
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expand-a-build-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expand a build matrix
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#critical-path-and-billed-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Critical path and billed minutes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="cicd-interview-questions-and-answers">CI/CD Interview Questions and Answers<a class="headerlink" href="#cicd-interview-questions-and-answers" title="Permanent link">&para;</a></h1>
+<p><strong>179 questions</strong> with the correct answer and a short explanation, organised from beginner (Level 1) to advanced (Level 4). Every question comes from a lesson in the free CI/CD Mastery Path, so you can open the lesson to go deeper.</p>
+<div class="admonition tip">
+<p class="admonition-title">Practise, don't just read</p>
+<p>Each lesson also ends with an interactive quiz, and the <a href="../quiz/">final quiz</a> tests all four levels. Try to answer each question below before reading the answer.</p>
+</div>
+<h2 id="level-1-pipeline-foundations">Level 1 · Pipeline Foundations<a class="headerlink" href="#level-1-pipeline-foundations" title="Permanent link">&para;</a></h2>
+<h3 id="01-what-cicd-is-and-why-pipelines-exist"><a href="../level-1/01-what-ci-cd-is/">01 · What CI/CD Is and Why Pipelines Exist</a><a class="headerlink" href="#01-what-cicd-is-and-why-pipelines-exist" title="Permanent link">&para;</a></h3>
+<p><strong>Q1.</strong> What distinguishes Continuous Deployment from Continuous Delivery?</p>
+<p><strong>Answer:</strong> Deployment releases every passing change to production automatically; delivery keeps every change releasable but a human decides when</p>
+<p>Delivery has a manual gate; deployment doesn't.</p>
+<p><strong>Q2.</strong> What does Continuous Integration require at minimum?</p>
+<p><strong>Answer:</strong> Frequent merges to a shared mainline, with every change automatically built and tested</p>
+<p>Small frequent merges keep integration pain low.</p>
+<p><strong>Q3.</strong> Why does the course say the pipeline ideas were demonstrated with minici rather than GitHub Actions?</p>
+<p><strong>Answer:</strong> No Actions runner or Jenkins server was available when it was written, so the ideas were run locally and the platform syntax comes from documentation</p>
+<p>The course states honestly what was and wasn't run.</p>
+<p><strong>Q4.</strong> Before CI/CD, what was the typical integration failure?</p>
+<p><strong>Answer:</strong> Weeks of separate branches merged the night before a release, producing a large, risky merge</p>
+<p>CI shrinks the batch size.</p>
+<h3 id="02-pipeline-anatomy-triggers-jobs-steps-stages"><a href="../level-1/02-pipeline-anatomy/">02 · Pipeline Anatomy: Triggers, Jobs, Steps &amp; Stages</a><a class="headerlink" href="#02-pipeline-anatomy-triggers-jobs-steps-stages" title="Permanent link">&para;</a></h3>
+<p><strong>Q5.</strong> In GitHub Actions vocabulary, what is the <code>needs:</code> keyword for?</p>
+<p><strong>Answer:</strong> Declaring that a job depends on other jobs finishing first</p>
+<p>It expresses ordering between jobs.</p>
+<p><strong>Q6.</strong> Which is a job and which is a step?</p>
+<p><strong>Answer:</strong> A job is a unit of work on one runner with its own clean workspace; a step is one command or action inside it</p>
+<p>Jobs run in parallel unless they declare needs.</p>
+<p><strong>Q7.</strong> What is a trigger?</p>
+<p><strong>Answer:</strong> The event that starts a pipeline run, such as push, pull_request, schedule or manual dispatch</p>
+<p>A pipeline should start for a reason you can name.</p>
+<p><strong>Q8.</strong> In Jenkins Declarative pipelines, what plays the role GitHub's <code>runs-on:</code> plays?</p>
+<p><strong>Answer:</strong> agent { ... }, which selects the machine or container</p>
+<p>Both name where work executes.</p>
+<h3 id="03-github-actions-essentials"><a href="../level-1/03-github-actions-essentials/">03 · GitHub Actions Essentials</a><a class="headerlink" href="#03-github-actions-essentials" title="Permanent link">&para;</a></h3>
+<p><strong>Q9.</strong> What does <code>concurrency</code> with <code>cancel-in-progress: true</code> do in the sample workflow?</p>
+<p><strong>Answer:</strong> Cancels an older in-flight run of the same group when a newer one starts</p>
+<p>The group is keyed by workflow and ref.</p>
+<p><strong>Q10.</strong> Why does the sample set <code>permissions: contents: read</code>?</p>
+<p><strong>Answer:</strong> Least privilege: the token gets only read access unless a job asks for more</p>
+<p>The default token may be read-write.</p>
+<p><strong>Q11.</strong> What does a matrix of two Python versions with <code>fail-fast: false</code> do?</p>
+<p><strong>Answer:</strong> Runs both versions even if one fails, so you see every result</p>
+<p>fail-fast: true cancels remaining cells.</p>
+<p><strong>Q12.</strong> Why set <code>timeout-minutes</code> on a job?</p>
+<p><strong>Answer:</strong> A hung job would otherwise run until the platform limit, wasting hours</p>
+<p>Linter rule W004 flags its absence.</p>
+<h3 id="04-jenkins-essentials-and-the-jenkinsfile"><a href="../level-1/04-jenkins-essentials/">04 · Jenkins Essentials and the Jenkinsfile</a><a class="headerlink" href="#04-jenkins-essentials-and-the-jenkinsfile" title="Permanent link">&para;</a></h3>
+<p><strong>Q13.</strong> What's the Jenkins controller's job, and what should NOT run on it?</p>
+<p><strong>Answer:</strong> It hosts the UI, job definitions, credentials and queue; keep builds off it and run them on agents</p>
+<p>Agents execute the work.</p>
+<p><strong>Q14.</strong> How do jobs choose an agent?</p>
+<p><strong>Answer:</strong> By label, such as 'linux &amp;&amp; docker'</p>
+<p>Labels describe capabilities.</p>
+<p><strong>Q15.</strong> What is the main operational burden of Jenkins plugins?</p>
+<p><strong>Answer:</strong> Each plugin is code with controller privileges, with its own update and vulnerability cadence</p>
+<p>Plugin sprawl is a scaling risk.</p>
+<p><strong>Q16.</strong> What does <code>parallel {}</code> inside a Declarative pipeline do?</p>
+<p><strong>Answer:</strong> Runs the contained stages at the same time</p>
+<p>Sequential stages run in order.</p>
+<h3 id="05-testing-gates-and-fast-feedback"><a href="../level-1/05-testing-gates/">05 · Testing Gates and Fast Feedback</a><a class="headerlink" href="#05-testing-gates-and-fast-feedback" title="Permanent link">&para;</a></h3>
+<p><strong>Q17.</strong> Two jobs: a 3-second integration suite that fails and a 0.1-second unit suite that fails. How does ordering affect feedback?</p>
+<p><strong>Answer:</strong> Running unit first reports the failure in 0.1 s versus 3.1 s: same checks, 30x faster feedback</p>
+<p>Order gates by cost and likelihood of failing.</p>
+<p><strong>Q18.</strong> What shape does the test pyramid recommend?</p>
+<p><strong>Answer:</strong> Many fast unit tests, fewer integration tests and very few end-to-end tests</p>
+<p>The reverse (an ice-cream cone) is slow and flaky.</p>
+<p><strong>Q19.</strong> Where should static checks like lint and type checks go?</p>
+<p><strong>Answer:</strong> First: they take seconds and catch cheap mistakes</p>
+<p>Surface problems early and cheaply.</p>
+<p><strong>Q20.</strong> What's a gate?</p>
+<p><strong>Answer:</strong> A check that must pass before a change moves on</p>
+<p>Most pipeline value comes from the gates and their order.</p>
+<h3 id="06-reproducible-builds-and-caching"><a href="../level-1/06-reproducible-builds-caching/">06 · Reproducible Builds and Caching</a><a class="headerlink" href="#06-reproducible-builds-and-caching" title="Permanent link">&para;</a></h3>
+<p><strong>Q21.</strong> Which practice makes a build more reproducible?</p>
+<p><strong>Answer:</strong> Pin dependencies with a lockfile, the toolchain version and base images by digest</p>
+<p>Otherwise the build is a function of the internet.</p>
+<p><strong>Q22.</strong> What should a cache key be derived from?</p>
+<p><strong>Answer:</strong> The hash of the inputs, such as the lockfile, rather than the date</p>
+<p>Same inputs, same key; changed lockfile, new key.</p>
+<p><strong>Q23.</strong> Why is <code>image:latest</code> a reproducibility problem?</p>
+<p><strong>Answer:</strong> It's mutable: the same tag can point to a different image tomorrow</p>
+<p>Use image@sha256 digests.</p>
+<p><strong>Q24.</strong> What does a bit-for-bit reproducible build guarantee?</p>
+<p><strong>Answer:</strong> Two machines building the same inputs produce identical bytes, useful for supply-chain verification</p>
+<p>It's a stronger goal than ordinary repeatability.</p>
+<h3 id="07-artifacts-registries-and-versioning"><a href="../level-1/07-artifacts-versioning/">07 · Artifacts, Registries and Versioning</a><a class="headerlink" href="#07-artifacts-registries-and-versioning" title="Permanent link">&para;</a></h3>
+<p><strong>Q25.</strong> What is the rule about promoting a build to production?</p>
+<p><strong>Answer:</strong> Build once and promote the same artifact (same digest) through staging to production</p>
+<p>Rebuilding deploys something you never tested.</p>
+<p><strong>Q26.</strong> Under Semantic Versioning, which change bumps MAJOR?</p>
+<p><strong>Answer:</strong> An incompatible change to the public API</p>
+<p>MINOR is features, PATCH is fixes.</p>
+<p><strong>Q27.</strong> Why mirror public dependencies in a private registry?</p>
+<p><strong>Answer:</strong> A public outage or package removal won't break your builds</p>
+<p>The left-pad incident is the example.</p>
+<p><strong>Q28.</strong> Why address a container image by digest as well as tag?</p>
+<p><strong>Answer:</strong> Tags can be moved; a digest identifies exact content</p>
+<p>Immutability is the point of an artifact.</p>
+<h3 id="08-secrets-in-pipelines"><a href="../level-1/08-secrets-in-pipelines/">08 · Secrets in Pipelines</a><a class="headerlink" href="#08-secrets-in-pipelines" title="Permanent link">&para;</a></h3>
+<p><strong>Q29.</strong> A secret is committed then deleted in the next commit. Is it safe?</p>
+<p><strong>Answer:</strong> No: Git history keeps it, so revoke and rotate it</p>
+<p>Treat it as compromised.</p>
+<p><strong>Q30.</strong> Why are secrets passed on command lines risky?</p>
+<p><strong>Answer:</strong> They're visible to other processes (ps) and often logged</p>
+<p>Prefer environment variables injected into only the needed step.</p>
+<p><strong>Q31.</strong> Which pull-request scenario exposes secrets to untrusted code?</p>
+<p><strong>Answer:</strong> Workflows triggered by forks that can read secrets</p>
+<p>Untrusted code must not receive secrets.</p>
+<p><strong>Q32.</strong> What does 'scope narrowly, inject late' mean?</p>
+<p><strong>Answer:</strong> Give each environment/job only the secrets it needs, exposed only to the step that uses them</p>
+<p>A single all-powerful token makes any leak catastrophic.</p>
+<h3 id="09-branching-strategies-and-pull-request-checks"><a href="../level-1/09-branching-pr-checks/">09 · Branching Strategies and Pull Request Checks</a><a class="headerlink" href="#09-branching-strategies-and-pull-request-checks" title="Permanent link">&para;</a></h3>
+<p><strong>Q33.</strong> Two branches each pass tests alone but fail when combined. What does this show?</p>
+<p><strong>Answer:</strong> PR checks must run on what will actually merge (the merged result), not the branch alone</p>
+<p>A rename plus a new caller of the old name broke after the merge.</p>
+<p><strong>Q34.</strong> Which branching strategy integrates continuously with very short-lived branches?</p>
+<p><strong>Answer:</strong> Trunk-based development, usually with feature flags</p>
+<p>Longer-lived branches mean riskier merges.</p>
+<p><strong>Q35.</strong> When is GitFlow a reasonable fit?</p>
+<p><strong>Answer:</strong> Software shipped in discrete versions with long support windows</p>
+<p>It integrates per release.</p>
+<p><strong>Q36.</strong> What should a PR pipeline answer within minutes?</p>
+<p><strong>Answer:</strong> Does it build, do tests/lint/type checks pass, are there security findings, who needs to review</p>
+<p>Fast feedback before merge.</p>
+<h3 id="10-project-a-local-ci-runner-you-can-run"><a href="../level-1/10-project-local-ci-runner/">10 · Project — A Local CI Runner You Can Run</a><a class="headerlink" href="#10-project-a-local-ci-runner-you-can-run" title="Permanent link">&para;</a></h3>
+<p><strong>Q37.</strong> In minici, what happens to a job whose dependency failed?</p>
+<p><strong>Answer:</strong> It's skipped unless it has <code>if: always()</code></p>
+<p>Same idea as GitHub's default behaviour.</p>
+<p><strong>Q38.</strong> Why does minici refuse unsupported <code>${{ }}</code> expressions?</p>
+<p><strong>Answer:</strong> Silently ignoring them would make a pipeline appear to work while skipping logic</p>
+<p>Fail loudly.</p>
+<p><strong>Q39.</strong> Why run step scripts with <code>set -eo pipefail</code>?</p>
+<p><strong>Answer:</strong> So a failing command in a pipeline fails the step instead of being hidden</p>
+<p>A step otherwise reports only the last command's status.</p>
+<p><strong>Q40.</strong> When does the runner save a cache?</p>
+<p><strong>Answer:</strong> Only on success</p>
+<p>A failed build could save a poisoned cache.</p>
+<h2 id="level-2-pipelines-in-depth">Level 2 · Pipelines in Depth<a class="headerlink" href="#level-2-pipelines-in-depth" title="Permanent link">&para;</a></h2>
+<h3 id="01-matrix-builds-parallelism"><a href="../level-2/01-matrix-parallelism/">01 · Matrix Builds &amp; Parallelism</a><a class="headerlink" href="#01-matrix-builds-parallelism" title="Permanent link">&para;</a></h3>
+<p><strong>Q41.</strong> A 3x3 os/python matrix with one exclude and one include that matches no cell. How many jobs?</p>
+<p><strong>Answer:</strong> 9 (9 - 1 + 1)</p>
+<p>The unmatched include adds a new job.</p>
+<p><strong>Q42.</strong> How does <code>exclude</code> match?</p>
+<p><strong>Answer:</strong> A combination is removed when it matches all the keys given; a partial pattern removes every combination containing those values</p>
+<p>Include matches existing cells or adds a new one.</p>
+<p><strong>Q43.</strong> When does <code>include</code> add a new job instead of extending an existing one?</p>
+<p><strong>Answer:</strong> When it matches no existing combination</p>
+<p>This trips people up.</p>
+<p><strong>Q44.</strong> Why is a matrix a trade-off?</p>
+<p><strong>Answer:</strong> It multiplies coverage but also compute minutes and queue time</p>
+<p>Billed minutes sum every cell.</p>
+<h3 id="02-cache-design-keys-scope-poisoning"><a href="../level-2/02-cache-design/">02 · Cache Design: Keys, Scope &amp; Poisoning</a><a class="headerlink" href="#02-cache-design-keys-scope-poisoning" title="Permanent link">&para;</a></h3>
+<p><strong>Q45.</strong> The lockfile changes when a dependency is bumped. What happens to a lockfile-hash cache key?</p>
+<p><strong>Answer:</strong> It changes, so the cache rebuilds, and reverting restores the original key's entry</p>
+<p>The key is deterministic over the inputs.</p>
+<p><strong>Q46.</strong> Why hash a lockfile rather than a loose requirements list?</p>
+<p><strong>Answer:</strong> <code>flask&gt;=3</code> resolves to different packages over time while its file hash stays the same</p>
+<p>The key must capture what determined the contents.</p>
+<p><strong>Q47.</strong> What are restore keys for?</p>
+<p><strong>Answer:</strong> Partial hits: restore the closest older cache when the exact key misses</p>
+<p>Most packages didn't change.</p>
+<p><strong>Q48.</strong> What is cache poisoning?</p>
+<p><strong>Answer:</strong> Bad content saved into a shared cache that later builds then trust</p>
+<p>Scope caches and avoid saving from untrusted PRs.</p>
+<h3 id="03-reusable-pipelines-workflows-actions-shared-libraries"><a href="../level-2/03-reusable-pipelines/">03 · Reusable Pipelines: Workflows, Actions &amp; Shared Libraries</a><a class="headerlink" href="#03-reusable-pipelines-workflows-actions-shared-libraries" title="Permanent link">&para;</a></h3>
+<p><strong>Q49.</strong> When should you choose a reusable workflow over a composite action?</p>
+<p><strong>Answer:</strong> When the shared unit needs its own runner, permissions or matrix (it delegates a whole job)</p>
+<p>Composite actions share steps inside a job.</p>
+<p><strong>Q50.</strong> How do reusable workflows receive secrets, and which is preferred?</p>
+<p><strong>Answer:</strong> Passed explicitly or via <code>secrets: inherit</code>; explicit is preferred</p>
+<p>Inputs are plain values, not secret.</p>
+<p><strong>Q51.</strong> Why was the top-level <code>on</code> key read as the boolean True in PyYAML?</p>
+<p><strong>Answer:</strong> YAML 1.1 treats <code>on</code> as a boolean</p>
+<p>Tools parsing workflows must account for it.</p>
+<p><strong>Q52.</strong> What is the gain of reusable pipelines across 15 repos?</p>
+<p><strong>Answer:</strong> One place to fix a security patch instead of fifteen copies</p>
+<p>Reuse is a maintenance and security lever.</p>
+<h3 id="04-containers-in-ci-images-services-readiness"><a href="../level-2/04-containers-in-ci/">04 · Containers in CI: Images, Services &amp; Readiness</a><a class="headerlink" href="#04-containers-in-ci-images-services-readiness" title="Permanent link">&para;</a></h3>
+<p><strong>Q53.</strong> A database service container is started but tests fail on the first query. Why?</p>
+<p><strong>Answer:</strong> Started is not ready: the process launched but isn't accepting queries; add a health check</p>
+<p>The sample uses --health-cmd pg_isready.</p>
+<p><strong>Q54.</strong> How do steps inside a <code>container:</code> job reach a service named db?</p>
+<p><strong>Answer:</strong> Via the host name db (the service name) on its port</p>
+<p>Service name is the DNS name.</p>
+<p><strong>Q55.</strong> What's the risk of <code>container: python:3.12-slim</code>?</p>
+<p><strong>Answer:</strong> The tag is mutable and may change under you; pin by digest for reproducibility</p>
+<p>Mutable tags break reproducibility.</p>
+<p><strong>Q56.</strong> What does this lesson say honestly about what was run?</p>
+<p><strong>Answer:</strong> No container was built or run; the syntax comes from documentation</p>
+<p>No container runtime was available.</p>
+<h3 id="05-test-reports-flaky-tests"><a href="../level-2/05-test-reports-flaky/">05 · Test Reports &amp; Flaky Tests</a><a class="headerlink" href="#05-test-reports-flaky-tests" title="Permanent link">&para;</a></h3>
+<p><strong>Q57.</strong> A suite has 100 tests, each flaking with probability 0.1%. How often is it green on correct code?</p>
+<p><strong>Answer:</strong> About 90.5% ((0.999)^100)</p>
+<p>Flakes compound: P(green) = (1-p)^n.</p>
+<p><strong>Q58.</strong> A 500-test suite with a 1% per-test flake rate is green how often?</p>
+<p><strong>Answer:</strong> About 0.7%</p>
+<p>(0.99)^500 is roughly 0.0066.</p>
+<p><strong>Q59.</strong> What is a flaky test?</p>
+<p><strong>Answer:</strong> One that passes and fails on the same code</p>
+<p>A few hundred make the pipeline random.</p>
+<p><strong>Q60.</strong> Why is rerunning until green a bad habit?</p>
+<p><strong>Answer:</strong> It hides flakes and teaches people to ignore red builds; fix or quarantine them with a flake budget</p>
+<p>Trust in the pipeline erodes.</p>
+<h3 id="06-quality-gates-coverage-lint-analysis"><a href="../level-2/06-quality-gates/">06 · Quality Gates: Coverage, Lint &amp; Analysis</a><a class="headerlink" href="#06-quality-gates-coverage-lint-analysis" title="Permanent link">&para;</a></h3>
+<p><strong>Q61.</strong> A module has 100% line and branch coverage and a pricing bug passes the weak test suite. What does this show?</p>
+<p><strong>Answer:</strong> Coverage shows what code ran, not that behaviour was checked; assertions matter</p>
+<p>A strong suite with the same coverage caught the bug.</p>
+<p><strong>Q62.</strong> What does mutation testing check?</p>
+<p><strong>Answer:</strong> Whether tests fail when small changes (like &gt; to &gt;=) are made to the code</p>
+<p>It gives evidence tests check behaviour.</p>
+<p><strong>Q63.</strong> What is a quality gate?</p>
+<p><strong>Answer:</strong> A check whose failure blocks a merge or deployment</p>
+<p>Examples: tests, coverage not dropping, lint, vulnerabilities.</p>
+<p><strong>Q64.</strong> Which signal can coverage legitimately give?</p>
+<p><strong>Answer:</strong> Finding code that no test touches</p>
+<p>It can't find missing assertions.</p>
+<h3 id="07-environments-approvals-concurrency"><a href="../level-2/07-environments-approvals/">07 · Environments, Approvals &amp; Concurrency</a><a class="headerlink" href="#07-environments-approvals-concurrency" title="Permanent link">&para;</a></h3>
+<p><strong>Q65.</strong> Why attach secrets to an environment rather than the repository?</p>
+<p><strong>Answer:</strong> Repository secrets are visible to every job; environment secrets are only released to jobs that pass the environment's protection rules</p>
+<p>Protection rules gate access.</p>
+<p><strong>Q66.</strong> What do required reviewers do on an environment?</p>
+<p><strong>Answer:</strong> Pause the deploy job until an approver signs off</p>
+<p>A waiting job doesn't consume a runner.</p>
+<p><strong>Q67.</strong> What do branch restrictions on an environment do?</p>
+<p><strong>Answer:</strong> Allow only workflows from specific branches (e.g. main) to deploy there</p>
+<p>They stop feature branches from deploying to production.</p>
+<p><strong>Q68.</strong> What happens to a run waiting for approval for too long?</p>
+<p><strong>Answer:</strong> It's eventually cancelled (documented limit around 30 days)</p>
+<p>Stale approvals silently expire.</p>
+<h3 id="08-runners-agents-where-your-jobs-actually-run"><a href="../level-2/08-runners-agents/">08 · Runners &amp; Agents: Where Your Jobs Actually Run</a><a class="headerlink" href="#08-runners-agents-where-your-jobs-actually-run" title="Permanent link">&para;</a></h3>
+<p><strong>Q69.</strong> What's the main risk of a persistent self-hosted runner workspace?</p>
+<p><strong>Answer:</strong> Stale files from earlier builds can make a build pass or fail depending on leftovers</p>
+<p>The lesson demonstrates this with minici.</p>
+<p><strong>Q70.</strong> When is a self-hosted runner justified?</p>
+<p><strong>Answer:</strong> Needs hosted runners can't meet: GPUs, ARM, private network access, special hardware</p>
+<p>You own patching and isolation.</p>
+<p><strong>Q71.</strong> Which runs jobs in a fresh VM discarded afterwards?</p>
+<p><strong>Answer:</strong> Hosted runners</p>
+<p>Isolation is a hosted-runner strength.</p>
+<p><strong>Q72.</strong> Why is running untrusted PR code on a persistent self-hosted runner dangerous?</p>
+<p><strong>Answer:</strong> It can persist malware or steal credentials between jobs</p>
+<p>Use ephemeral runners for untrusted code.</p>
+<h3 id="09-monorepos-path-filters"><a href="../level-2/09-monorepos-path-filters/">09 · Monorepos &amp; Path Filters</a><a class="headerlink" href="#09-monorepos-path-filters" title="Permanent link">&para;</a></h3>
+<p><strong>Q73.</strong> 30 services at 12 minutes each, run on every push: what's the cost?</p>
+<p><strong>Answer:</strong> About 6 hours of runner time per push</p>
+<p>Hence path filters and affected-only builds.</p>
+<p><strong>Q74.</strong> What does <code>paths:</code> do in a workflow trigger?</p>
+<p><strong>Answer:</strong> Runs the workflow only when changed files match the patterns</p>
+<p>paths-ignore is the inverse.</p>
+<p><strong>Q75.</strong> Why must path filters include shared libraries a service depends on?</p>
+<p><strong>Answer:</strong> A change in libs/common can break the service even if its own files didn't change</p>
+<p>Missing dependencies lead to false greens.</p>
+<p><strong>Q76.</strong> What does the course's pathfilter map?</p>
+<p><strong>Answer:</strong> Changed files to the projects they affect, tested with a real temporary Git repo</p>
+<p>Nine tests pass.</p>
+<h3 id="10-project-a-workflow-linter"><a href="../level-2/10-project-workflow-linter/">10 · Project — A Workflow Linter</a><a class="headerlink" href="#10-project-a-workflow-linter" title="Permanent link">&para;</a></h3>
+<p><strong>Q77.</strong> What does rule W003 flag?</p>
+<p><strong>Answer:</strong> <code>uses:</code> not pinned to a 40-hex commit SHA</p>
+<p>Tags can be moved; a SHA cannot.</p>
+<p><strong>Q78.</strong> Why is <code>pull_request_target</code> checking out the PR head dangerous (W002)?</p>
+<p><strong>Answer:</strong> Untrusted code runs with a privileged token and secrets</p>
+<p>A classic supply-chain attack path.</p>
+<p><strong>Q79.</strong> What is script injection (W005)?</p>
+<p><strong>Answer:</strong> Untrusted <code>${{ github.event... }}</code> text interpolated into a run: script, letting an attacker execute commands</p>
+<p>Pass values via env instead.</p>
+<p><strong>Q80.</strong> Why does a deploy job need <code>concurrency:</code> (W006)?</p>
+<p><strong>Answer:</strong> Two runs could deploy at once and the older one may finish last, leaving an old version live</p>
+<p>Serialise deploys.</p>
+<h2 id="level-3-delivery-release-engineering">Level 3 · Delivery &amp; Release Engineering<a class="headerlink" href="#level-3-delivery-release-engineering" title="Permanent link">&para;</a></h2>
+<h3 id="01-deployment-strategies"><a href="../level-3/01-deployment-strategies/">01 · Deployment Strategies</a><a class="headerlink" href="#01-deployment-strategies" title="Permanent link">&para;</a></h3>
+<p><strong>Q81.</strong> Which strategy has downtime between stopping the old version and starting the new?</p>
+<p><strong>Answer:</strong> Recreate</p>
+<p>It's simple and fine for maintenance windows.</p>
+<p><strong>Q82.</strong> What is the main risk of a rolling deployment?</p>
+<p><strong>Answer:</strong> Old and new versions serve traffic at the same time, so they must be compatible</p>
+<p>Rolling replaces instances a few at a time.</p>
+<p><strong>Q83.</strong> What does blue-green give you?</p>
+<p><strong>Answer:</strong> An instant switch of traffic, and an instant switch back while the old environment is kept alive</p>
+<p>Cost: a whole second environment, and shared databases still need compatible changes.</p>
+<p><strong>Q84.</strong> What does a canary release need to be safe?</p>
+<p><strong>Answer:</strong> Good metrics and enough traffic to detect a problem on the small share</p>
+<p>Send traffic back to 0% to roll back.</p>
+<h3 id="02-feature-flags-decoupling-deploy-from-release"><a href="../level-3/02-feature-flags/">02 · Feature Flags: Decoupling Deploy from Release</a><a class="headerlink" href="#02-feature-flags-decoupling-deploy-from-release" title="Permanent link">&para;</a></h3>
+<p><strong>Q85.</strong> What do feature flags decouple?</p>
+<p><strong>Answer:</strong> Deploy (code on servers) from release (behaviour exposed to users)</p>
+<p>A flag off means a deploy isn't a launch.</p>
+<p><strong>Q86.</strong> Why is a percentage rollout based on a hash of flag and user id?</p>
+<p><strong>Answer:</strong> A user gets a consistent answer, and widening from 10% to 20% keeps the earlier 10% enabled (a subset)</p>
+<p>The sample showed a 10% set is a subset of the 20% set.</p>
+<p><strong>Q87.</strong> Why are flags the usual fastest rollback for a bad release?</p>
+<p><strong>Answer:</strong> Reverting a value takes seconds, no redeploy</p>
+<p>Remove stale flags afterwards.</p>
+<p><strong>Q88.</strong> What problem do long-lived flags cause?</p>
+<p><strong>Answer:</strong> Accumulated untested combinations and dead code paths</p>
+<p>Clean up flags once rollout completes.</p>
+<h3 id="03-database-migrations-expand-contract"><a href="../level-3/03-database-migrations/">03 · Database Migrations: Expand &amp; Contract</a><a class="headerlink" href="#03-database-migrations-expand-contract" title="Permanent link">&para;</a></h3>
+<p><strong>Q89.</strong> Why does a direct <code>RENAME COLUMN name TO full_name</code> break a rolling deploy?</p>
+<p><strong>Answer:</strong> Old code still running (or after a rollback) queries <code>name</code> and fails immediately</p>
+<p>Verified in SQLite in the lesson.</p>
+<p><strong>Q90.</strong> What is the expand/migrate/contract pattern?</p>
+<p><strong>Answer:</strong> Add the new column compatibly, migrate data and code, then remove the old column in a later release</p>
+<p>Each step is compatible with its neighbours.</p>
+<p><strong>Q91.</strong> Why can't you just roll back a destructive schema change?</p>
+<p><strong>Answer:</strong> The data or column is gone, and old code breaks</p>
+<p>Only additive changes are easy to roll back.</p>
+<p><strong>Q92.</strong> What should the new column be at the expand step?</p>
+<p><strong>Answer:</strong> Nullable, with no constraint the old code would violate</p>
+<p>Old code ignores it.</p>
+<h3 id="04-rollbacks-going-back-and-when-you-cannot"><a href="../level-3/04-rollbacks/">04 · Rollbacks: Going Back, and When You Cannot</a><a class="headerlink" href="#04-rollbacks-going-back-and-when-you-cannot" title="Permanent link">&para;</a></h3>
+<p><strong>Q93.</strong> Which change can a rollback restore?</p>
+<p><strong>Answer:</strong> Stateless application code and configuration/flag values</p>
+<p>Redeploy the previous artifact or revert the value.</p>
+<p><strong>Q94.</strong> Which of these can a rollback NOT undo?</p>
+<p><strong>Answer:</strong> External effects such as emails, payments and API calls</p>
+<p>Plan forward fixes for such effects.</p>
+<p><strong>Q95.</strong> In GitOps, what is a rollback?</p>
+<p><strong>Answer:</strong> A revert in Git that the reconciler applies</p>
+<p>The simulator models this.</p>
+<p><strong>Q96.</strong> Why is 'we can always roll back' risky?</p>
+<p><strong>Answer:</strong> It's only true for some changes; data and external effects may be irreversible</p>
+<p>The most expensive sentence in delivery.</p>
+<h3 id="05-infrastructure-pipelines-plan-review-apply"><a href="../level-3/05-infrastructure-pipelines/">05 · Infrastructure Pipelines: Plan, Review, Apply</a><a class="headerlink" href="#05-infrastructure-pipelines-plan-review-apply" title="Permanent link">&para;</a></h3>
+<p><strong>Q97.</strong> What should run on every pull request in an infrastructure repo?</p>
+<p><strong>Answer:</strong> A plan, shown to reviewers, since one variable change can have large effects the HCL diff doesn't show</p>
+<p>Plan on PRs, apply on merge.</p>
+<p><strong>Q98.</strong> Why apply a saved plan (plan -out)?</p>
+<p><strong>Answer:</strong> It guarantees the applied change is exactly what was reviewed</p>
+<p>A fresh plan on main may differ.</p>
+<p><strong>Q99.</strong> How should credentials differ between plan and apply jobs?</p>
+<p><strong>Answer:</strong> Plan job read-only; apply job has write access only on the protected branch and environment</p>
+<p>Separate credentials limit blast radius.</p>
+<p><strong>Q100.</strong> Why serialise applies per state?</p>
+<p><strong>Answer:</strong> Concurrent applies could corrupt state; use locking and a concurrency group</p>
+<p>One at a time per state.</p>
+<h3 id="06-gitops-reconciling-desired-state"><a href="../level-3/06-gitops/">06 · GitOps: Reconciling Desired State</a><a class="headerlink" href="#06-gitops-reconciling-desired-state" title="Permanent link">&para;</a></h3>
+<p><strong>Q101.</strong> What is the GitOps reconciler's job?</p>
+<p><strong>Answer:</strong> Continuously compare desired state in Git with actual state and apply the difference</p>
+<p>Create what's missing, update what differs, optionally prune extras.</p>
+<p><strong>Q102.</strong> Someone sets web replicas to 10 by hand and adds a <code>debug</code> object. What does the simulator report?</p>
+<p><strong>Answer:</strong> Drift: web changed, debug extra; reconcile updates web and (with prune) deletes debug</p>
+<p>Git remains the source of truth.</p>
+<p><strong>Q103.</strong> What is the difference between push and GitOps deployment?</p>
+<p><strong>Answer:</strong> Push: CI applies to the target; GitOps: a reconciler pulls and applies from Git</p>
+<p>Cluster credentials stay inside the cluster in the pull model.</p>
+<p><strong>Q104.</strong> What does <code>prune</code> do?</p>
+<p><strong>Answer:</strong> Deletes objects that exist but aren't in Git</p>
+<p>Without it extras survive.</p>
+<h3 id="07-release-management-versions-changelogs-trains"><a href="../level-3/07-release-management/">07 · Release Management: Versions, Changelogs &amp; Trains</a><a class="headerlink" href="#07-release-management-versions-changelogs-trains" title="Permanent link">&para;</a></h3>
+<p><strong>Q105.</strong> Under Conventional Commits, which commit bumps MAJOR?</p>
+<p><strong>Answer:</strong> <code>feat!: drop python 3.8</code> (or a BREAKING CHANGE footer)</p>
+<p>! marks a breaking change.</p>
+<p><strong>Q106.</strong> Which bumps MINOR?</p>
+<p><strong>Answer:</strong> feat(api): add export</p>
+<p>A new backward-compatible feature.</p>
+<p><strong>Q107.</strong> Why use machine-readable commit messages?</p>
+<p><strong>Answer:</strong> A tool can compute the next version and write the changelog</p>
+<p>semrel does this.</p>
+<p><strong>Q108.</strong> What does a changelog serve?</p>
+<p><strong>Answer:</strong> Telling consumers what changed between releases so they can judge upgrade risk</p>
+<p>Continuous delivery still needs release communication.</p>
+<h3 id="08-supply-chain-security-for-pipelines"><a href="../level-3/08-supply-chain-security/">08 · Supply-Chain Security for Pipelines</a><a class="headerlink" href="#08-supply-chain-security-for-pipelines" title="Permanent link">&para;</a></h3>
+<p><strong>Q109.</strong> What is dependency confusion?</p>
+<p><strong>Answer:</strong> A public package with the same name as your private one wins resolution</p>
+<p>Use scoped registries.</p>
+<p><strong>Q110.</strong> How do you defend against a moved tag on a third-party action?</p>
+<p><strong>Answer:</strong> Pin to a full commit SHA</p>
+<p>A SHA can't be moved.</p>
+<p><strong>Q111.</strong> What did the checksum demo show?</p>
+<p><strong>Answer:</strong> Tampering with an archive changes its SHA-256, so verification fails</p>
+<p>Verify downloads.</p>
+<p><strong>Q112.</strong> What is an SBOM for?</p>
+<p><strong>Answer:</strong> Listing a build's components so vulnerable dependencies can be found</p>
+<p>It helps with transitive dependencies.</p>
+<h3 id="09-measuring-delivery-the-dora-metrics"><a href="../level-3/09-dora-metrics/">09 · Measuring Delivery: The DORA Metrics</a><a class="headerlink" href="#09-measuring-delivery-the-dora-metrics" title="Permanent link">&para;</a></h3>
+<p><strong>Q113.</strong> Which are the four DORA measures?</p>
+<p><strong>Answer:</strong> Deployment frequency, lead time for changes, change failure rate, time to restore</p>
+<p>Two measure speed and two stability.</p>
+<p><strong>Q114.</strong> On the fixture, lead times are 2, 4, 6 and 1 hours and two of four deploys failed. What are the average lead time and change failure rate?</p>
+<p><strong>Answer:</strong> 3.25 hours and 50%</p>
+<p>(2+4+6+1)/4 = 3.25; 2/4 = 50%.</p>
+<p><strong>Q115.</strong> A team deploys ten times a day with a 40% failure rate. Are they elite?</p>
+<p><strong>Answer:</strong> No: speed without stability isn't elite</p>
+<p>Both pairs matter.</p>
+<p><strong>Q116.</strong> Why not rank people by DORA metrics?</p>
+<p><strong>Answer:</strong> They measure the delivery system, and using them as targets invites gaming</p>
+<p>Use them to find bottlenecks.</p>
+<h3 id="10-project-a-canary-release-simulator"><a href="../level-3/10-project-canary-simulator/">10 · Project — A Canary Release Simulator</a><a class="headerlink" href="#10-project-a-canary-release-simulator" title="Permanent link">&para;</a></h3>
+<p><strong>Q117.</strong> Why is the canary test one-sided?</p>
+<p><strong>Answer:</strong> Only a worse canary matters; a better one isn't a reason to stop</p>
+<p>A test asserts z &lt; 0 doesn't roll back.</p>
+<p><strong>Q118.</strong> Why require a minimum canary sample?</p>
+<p><strong>Answer:</strong> At 1% of 20,000 requests only 200 canary requests exist and a burst of errors can look dramatic</p>
+<p>min_canary=400.</p>
+<p><strong>Q119.</strong> What does the simulator do after the last step succeeds?</p>
+<p><strong>Answer:</strong> Promotes the canary to 100%</p>
+<p>Otherwise it rolls back when z exceeds the limit.</p>
+<p><strong>Q120.</strong> Why accumulate counts across steps?</p>
+<p><strong>Answer:</strong> More samples sharpen detection of a small increase in error rate</p>
+<p>Each step adds evidence.</p>
+<h2 id="level-4-pipelines-at-scale">Level 4 · Pipelines at Scale<a class="headerlink" href="#level-4-pipelines-at-scale" title="Permanent link">&para;</a></h2>
+<h3 id="01-threat-modelling-the-pipeline"><a href="../level-4/01-pipeline-threat-model/">01 · Threat-Modelling the Pipeline</a><a class="headerlink" href="#01-threat-modelling-the-pipeline" title="Permanent link">&para;</a></h3>
+<p><strong>Q121.</strong> What should you do first when threat-modelling a pipeline?</p>
+<p><strong>Answer:</strong> List what you're protecting (deploy credentials, source access, signing keys, secrets, artifacts, runners)</p>
+<p>Then ask what an attacker could do with each.</p>
+<p><strong>Q122.</strong> Why are signing keys a high-value asset?</p>
+<p><strong>Answer:</strong> An attacker can make malicious artifacts look genuine</p>
+<p>Protect them in a vault or hardware-backed service.</p>
+<p><strong>Q123.</strong> Why is a build cache a target?</p>
+<p><strong>Answer:</strong> Poisoning it can ship tampered code without touching the source</p>
+<p>Scope and key caches carefully.</p>
+<p><strong>Q124.</strong> Which earlier control does this lesson reuse?</p>
+<p><strong>Answer:</strong> The workflow linter that flags unpinned actions, missing permissions and script injection</p>
+<p>Defence in depth.</p>
+<h3 id="02-speed-cost"><a href="../level-4/02-speed-and-cost/">02 · Speed &amp; Cost</a><a class="headerlink" href="#02-speed-cost" title="Permanent link">&para;</a></h3>
+<p><strong>Q125.</strong> lint 1, build 4, unit 6 (3 cells, needs build), e2e 12 (needs build), deploy 2 (needs unit and e2e). What are the critical path and billed minutes?</p>
+<p><strong>Answer:</strong> 18 minutes (build 4 → e2e 12 → deploy 2) and 37 billed minutes</p>
+<p>Wall-clock follows the longest dependency chain; billed time sums every job including each matrix cell.</p>
+<p><strong>Q126.</strong> What's the difference between wall-clock time and compute time?</p>
+<p><strong>Answer:</strong> Wall-clock is what a developer waits; compute is total billed machine-minutes</p>
+<p>Parallelism trades one for the other.</p>
+<p><strong>Q127.</strong> Does splitting a 12-minute job across 3 runners reduce total compute?</p>
+<p><strong>Answer:</strong> No: it cuts wall-clock but total compute doesn't drop (and startup overhead adds)</p>
+<p>Cost and speed are different dials.</p>
+<p><strong>Q128.</strong> What is the best way to shorten a pipeline's latency?</p>
+<p><strong>Answer:</strong> Shorten the critical path: split or speed up the longest chain</p>
+<p>Work off the critical path doesn't change latency.</p>
+<h3 id="03-jenkins-at-scale"><a href="../level-4/03-jenkins-at-scale/">03 · Jenkins at Scale</a><a class="headerlink" href="#03-jenkins-at-scale" title="Permanent link">&para;</a></h3>
+<p><strong>Q129.</strong> Why shouldn't heavy logic live in a Jenkinsfile?</p>
+<p><strong>Answer:</strong> Pipeline scripts run in the controller's JVM, so heavy loops load the controller</p>
+<p>Push work to agents and tools.</p>
+<p><strong>Q130.</strong> What stops unbounded build history filling the controller disk?</p>
+<p><strong>Answer:</strong> Build discarders (keep N builds or N days)</p>
+<p>Set sensible defaults.</p>
+<p><strong>Q131.</strong> Why is configuration drift a problem for UI-configured Jenkins?</p>
+<p><strong>Answer:</strong> Changes aren't versioned or reproducible, so a rebuilt controller loses them; use configuration as code</p>
+<p>JCasC is the remedy.</p>
+<p><strong>Q132.</strong> What is plugin sprawl?</p>
+<p><strong>Answer:</strong> Hundreds of plugins from many maintainers, each running with controller privileges and its own update cadence</p>
+<p>Reduce and review plugins.</p>
+<h3 id="04-github-actions-at-scale"><a href="../level-4/04-actions-at-scale/">04 · GitHub Actions at Scale</a><a class="headerlink" href="#04-github-actions-at-scale" title="Permanent link">&para;</a></h3>
+<p><strong>Q133.</strong> A job needs 8 hours. Where can it run?</p>
+<p><strong>Answer:</strong> Self-hosted runners (hosted jobs are capped at 6 hours), or split the work</p>
+<p>Hosted ≤ 6 h; self-hosted ≤ 5 days.</p>
+<p><strong>Q134.</strong> A matrix needs 400 cells. What's the constraint?</p>
+<p><strong>Answer:</strong> A matrix is limited to 256 jobs; split into several workflows or chunks</p>
+<p>Design around documented limits.</p>
+<p><strong>Q135.</strong> Why not build a 'retry until green' habit given re-run limits?</p>
+<p><strong>Answer:</strong> Re-runs are capped (documented 50 attempts) and hide flakes</p>
+<p>Fix flakes instead.</p>
+<p><strong>Q136.</strong> How do large caches interact with the 10 GB per repository limit?</p>
+<p><strong>Answer:</strong> They evict each other (LRU), so share keys and cache downloads</p>
+<p>Design caches deliberately.</p>
+<h3 id="05-audit-compliance"><a href="../level-4/05-audit-compliance/">05 · Audit &amp; Compliance</a><a class="headerlink" href="#05-audit-compliance" title="Permanent link">&para;</a></h3>
+<p><strong>Q137.</strong> Which evidence shows a change was reviewed by someone other than the author?</p>
+<p><strong>Answer:</strong> Pull-request approvals with identities and timestamps, enforced by branch protection</p>
+<p>Evidence should be produced by the pipeline.</p>
+<p><strong>Q138.</strong> What does separation of duties mean here?</p>
+<p><strong>Answer:</strong> The same person shouldn't be able to write, approve and deploy a risky change</p>
+<p>Access reviews verify it.</p>
+<p><strong>Q139.</strong> What does a hash-chained audit log give?</p>
+<p><strong>Answer:</strong> Tamper evidence: altering any earlier entry breaks the chain</p>
+<p>It's a teaching model, not a certified product.</p>
+<p><strong>Q140.</strong> What must be recorded about a deployment?</p>
+<p><strong>Answer:</strong> Version, artifact digest, commit SHA and build ID</p>
+<p>Traceability answers 'what exactly was deployed?'.</p>
+<h3 id="06-testing-pipelines"><a href="../level-4/06-testing-pipelines/">06 · Testing Pipelines</a><a class="headerlink" href="#06-testing-pipelines" title="Permanent link">&para;</a></h3>
+<p><strong>Q141.</strong> A pipeline contract test breaks a unit test and expects what?</p>
+<p><strong>Answer:</strong> The test job fails and packaging/deploy jobs are skipped</p>
+<p>A false green is the worst failure.</p>
+<p><strong>Q142.</strong> Why test the gates themselves?</p>
+<p><strong>Answer:</strong> A scan that quietly stops running looks green; verify it fails on known-bad input</p>
+<p>A gate that never fails may not be running.</p>
+<p><strong>Q143.</strong> What's a false red?</p>
+<p><strong>Answer:</strong> A pipeline blocking good changes</p>
+<p>Both false green and false red erode trust.</p>
+<p><strong>Q144.</strong> What does a workflow linter check that tests don't?</p>
+<p><strong>Answer:</strong> Config validity: YAML syntax, expression errors, references to jobs and secrets that don't exist</p>
+<p>It's a different layer.</p>
+<h3 id="07-pipeline-incidents"><a href="../level-4/07-pipeline-incidents/">07 · Pipeline Incidents</a><a class="headerlink" href="#07-pipeline-incidents" title="Permanent link">&para;</a></h3>
+<p><strong>Q145.</strong> A secret leaked in a repository. What's the first priority?</p>
+<p><strong>Answer:</strong> Revoke and rotate it, then investigate</p>
+<p>Assume it's compromised.</p>
+<p><strong>Q146.</strong> Main is red and nobody can merge. What's the first priority?</p>
+<p><strong>Answer:</strong> Restore green quickly by reverting or fixing forward</p>
+<p>Broken main blocks everyone.</p>
+<p><strong>Q147.</strong> A runaway matrix is burning budget. What do you do first?</p>
+<p><strong>Answer:</strong> Cancel the runs, cap spend, then fix the trigger</p>
+<p>Stop the bleeding.</p>
+<p><strong>Q148.</strong> Why know an emergency deploy path?</p>
+<p><strong>Answer:</strong> If the pipeline is down, you still need a controlled way to ship a fix</p>
+<p>Pipeline outages stop all shipping.</p>
+<h3 id="08-migrating-ci-systems"><a href="../level-4/08-migrating-ci/">08 · Migrating CI Systems</a><a class="headerlink" href="#08-migrating-ci-systems" title="Permanent link">&para;</a></h3>
+<p><strong>Q149.</strong> What's the first phase of a CI migration?</p>
+<p><strong>Answer:</strong> Decide why (valid reasons), then inventory everything</p>
+<p>You can't migrate what you haven't found.</p>
+<p><strong>Q150.</strong> What does wf2minici do for unsupported features?</p>
+<p><strong>Answer:</strong> Lists everything it can't translate rather than silently dropping it</p>
+<p>Honest conversion.</p>
+<p><strong>Q151.</strong> What should an inventory include for each pipeline?</p>
+<p><strong>Answer:</strong> Triggers, steps/tools, credentials, runner needs and downstream consumers</p>
+<p>Downstream consumers rely on statuses and artifacts.</p>
+<p><strong>Q152.</strong> What's a safe cutover technique?</p>
+<p><strong>Answer:</strong> Run old and new in parallel and compare results before switching required checks</p>
+<p>Parallel runs find gaps.</p>
+<h3 id="09-golden-paths-making-the-right-way-the-easy-way"><a href="../level-4/09-golden-paths/">09 · Golden Paths: Making the Right Way the Easy Way</a><a class="headerlink" href="#09-golden-paths-making-the-right-way-the-easy-way" title="Permanent link">&para;</a></h3>
+<p><strong>Q153.</strong> What is a golden path?</p>
+<p><strong>Answer:</strong> A supported, easy default route that bundles the secure, tested, observable way of shipping</p>
+<p>Make the right way the easy way.</p>
+<p><strong>Q154.</strong> What belongs on a Python service's golden path?</p>
+<p><strong>Answer:</strong> Layout, CI workflow with pinned tools, deploy pipeline with approvals, security baseline, observability, docs</p>
+<p>Teams otherwise remake these decisions.</p>
+<p><strong>Q155.</strong> How is a golden path verified?</p>
+<p><strong>Answer:</strong> By tests that check the generated workflow meets policy (pinned actions, permissions, timeouts)</p>
+<p>goldenpath.py has eight tests.</p>
+<p><strong>Q156.</strong> Why not force teams onto the path?</p>
+<p><strong>Answer:</strong> It should win by being easier; forcing breeds workarounds</p>
+<p>Paved road, not a fence.</p>
+<h3 id="10-capstone-a-release-readiness-check"><a href="../level-4/10-capstone-delivery-platform/">10 · Capstone — A Release-Readiness Check</a><a class="headerlink" href="#10-capstone-a-release-readiness-check" title="Permanent link">&para;</a></h3>
+<p><strong>Q157.</strong> When is a release <code>ready</code> in the capstone?</p>
+<p><strong>Answer:</strong> Only when the list of reasons is empty</p>
+<p>Four independent checks collect reasons.</p>
+<p><strong>Q158.</strong> Which four checks does readiness combine?</p>
+<p><strong>Answer:</strong> Workflow lint, infrastructure plan guard, DORA delivery health and a canary simulation</p>
+<p>Each adds reasons.</p>
+<p><strong>Q159.</strong> What happens if the canary simulator decides to roll back?</p>
+<p><strong>Answer:</strong> A reason is added and the release is not ready</p>
+<p>Metrics include canary decision.</p>
+<p><strong>Q160.</strong> What are the capstone's inputs?</p>
+<p><strong>Answer:</strong> Synthetic data: a generated workflow, a plan and hand-made deployments, not real team data</p>
+<p>The lesson states it plainly.</p>
+<h2 id="mixed-questions-across-all-levels">Mixed questions across all levels<a class="headerlink" href="#mixed-questions-across-all-levels" title="Permanent link">&para;</a></h2>
+<p><strong>Q161.</strong> Which statement best distinguishes continuous delivery from continuous deployment?</p>
+<p><strong>Answer:</strong> Delivery keeps every passing change releasable with a human release decision; deployment releases every passing change automatically</p>
+<p>The difference is the manual gate.</p>
+<p><strong>Q162.</strong> Same two failing checks: unit (0.1 s) and integration (3 s). Which order gives the fastest feedback?</p>
+<p><strong>Answer:</strong> Unit first, then integration: you learn about the failure in 0.1 s instead of 3.1 s</p>
+<p>Order gates by cost and likelihood of failing.</p>
+<p><strong>Q163.</strong> A team deploys with <code>image: python:3.12-slim</code> and sees a surprise change. Why?</p>
+<p><strong>Answer:</strong> Mutable tags can move to a different image; pin by digest</p>
+<p>Pinned inputs make builds reproducible.</p>
+<p><strong>Q164.</strong> A cache key is the date. What goes wrong?</p>
+<p><strong>Answer:</strong> It ignores the inputs: stale dependencies are restored after a lockfile change, or the cache misses daily; hash the lockfile instead</p>
+<p>Hash inputs, not time.</p>
+<p><strong>Q165.</strong> A 500-test suite where every test flakes 1% of the time is green how often on correct code?</p>
+<p><strong>Answer:</strong> About 0.7% ((0.99)^500)</p>
+<p>Flakes compound, so a flake budget matters.</p>
+<p><strong>Q166.</strong> The module has 100% coverage but a pricing bug passed CI. What was missing?</p>
+<p><strong>Answer:</strong> Assertions: coverage shows what ran, not that outputs were checked; consider mutation testing</p>
+<p>Weak and strong suites can have identical coverage.</p>
+<p><strong>Q167.</strong> A PR passes on its branch but main breaks after merging. What should the PR check run on?</p>
+<p><strong>Answer:</strong> The merged result (what will actually land on main), ideally via a merge queue</p>
+<p>Two green branches can combine into a red build.</p>
+<p><strong>Q168.</strong> Which setup limits damage if a PR from a fork is malicious?</p>
+<p><strong>Answer:</strong> No secrets for fork PRs, least-privilege token, and no pull_request_target checkout of untrusted code</p>
+<p>Untrusted code must not meet privileged credentials.</p>
+<p><strong>Q169.</strong> How should third-party actions be referenced?</p>
+<p><strong>Answer:</strong> Pinned to a full commit SHA (tags can be moved)</p>
+<p>Rule W003 in the course linter.</p>
+<p><strong>Q170.</strong> A deploy job lacks <code>concurrency:</code>. What can happen?</p>
+<p><strong>Answer:</strong> Two runs deploy at once and the older run may finish last, leaving the old version live</p>
+<p>Serialise deploys per environment.</p>
+<p><strong>Q171.</strong> Production approvals should live where?</p>
+<p><strong>Answer:</strong> On a protected environment with required reviewers and environment-scoped secrets</p>
+<p>Protection rules gate secrets and jobs.</p>
+<p><strong>Q172.</strong> You must rename a database column during a rolling deploy. What's the safe sequence?</p>
+<p><strong>Answer:</strong> Expand (add nullable new column), migrate data and code, then contract (drop the old column) in a later release</p>
+<p>Old and new code overlap during rollouts.</p>
+<p><strong>Q173.</strong> Which cannot be fixed by a rollback?</p>
+<p><strong>Answer:</strong> A destructive schema change, sent emails and payments</p>
+<p>Rollbacks restore code, not data or side effects.</p>
+<p><strong>Q174.</strong> Which deployment strategy gives instant switch-back but costs a whole second environment?</p>
+<p><strong>Answer:</strong> Blue-green</p>
+<p>Keep the old environment alive until the new one is proven.</p>
+<p><strong>Q175.</strong> A canary at 1% of 20,000 requests gets 200 canary requests. Why does the simulator wait for a minimum sample?</p>
+<p><strong>Answer:</strong> Small samples let a single error burst look like a real regression</p>
+<p>min_canary protects against noise.</p>
+<p><strong>Q176.</strong> Which two DORA measures describe stability?</p>
+<p><strong>Answer:</strong> Change failure rate and time to restore</p>
+<p>The other two describe speed.</p>
+<p><strong>Q177.</strong> A pipeline's wall-clock time is 18 minutes but billed minutes are 37. Why do they differ?</p>
+<p><strong>Answer:</strong> Wall-clock follows the critical path; billed time sums every job and matrix cell</p>
+<p>Parallelism trades one for the other.</p>
+<p><strong>Q178.</strong> A secret was pushed to a public repo and removed in the next commit. What now?</p>
+<p><strong>Answer:</strong> Revoke and rotate it immediately: Git history and forks keep it</p>
+<p>Revoke first, investigate second.</p>
+<p><strong>Q179.</strong> A migration from Jenkins to Actions is planned. What comes before converting pipelines?</p>
+<p><strong>Answer:</strong> Inventory: triggers, tools, credentials, runners and downstream consumers</p>
+<p>You can't migrate what you haven't found.</p>
+<h2 id="practical-coding-questions">Practical coding questions<a class="headerlink" href="#practical-coding-questions" title="Permanent link">&para;</a></h2>
+<h3 id="expand-a-build-matrix">Expand a build matrix<a class="headerlink" href="#expand-a-build-matrix" title="Permanent link">&para;</a></h3>
+<p>Implement expand_matrix(): the Cartesian product of the list-valued keys, remove combinations that match every key of an <code>exclude</code> entry, then apply each <code>include</code> (extend matching cells, or add a new job if it matches none). The sample matrix should yield 9 jobs.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>import itertools
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>def expand_matrix(matrix):
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    # Cartesian product of the list-valued keys, minus `exclude` matches,
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    # then `include`: extend matching cells or add a new job if none match.
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    return []
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>matrix = {
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    "os": ["ubuntu", "windows", "macos"],
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    "python": ["3.11", "3.12", "3.13"],
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    "exclude": [{"os": "macos", "python": "3.11"}],
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    "include": [{"os": "ubuntu", "python": "3.14", "experimental": True}],
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>}
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>jobs = expand_matrix(matrix)
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>print(len(jobs))
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>for j in jobs:
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    print(j["os"] + "/" + j["python"] + (" (experimental)" if j.get("experimental") else ""))
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>9
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>ubuntu/3.11
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>ubuntu/3.12
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>ubuntu/3.13
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>windows/3.11
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>windows/3.12
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>windows/3.13
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>macos/3.12
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>macos/3.13
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>ubuntu/3.14 (experimental)
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+import itertools
+
+def expand_matrix(matrix):
+    include = matrix.get("include", [])
+    exclude = matrix.get("exclude", [])
+    keys = [k for k in matrix if k not in ("include", "exclude")]
+    combos = [dict(zip(keys, v)) for v in itertools.product(*(matrix[k] for k in keys))]
+    combos = [c for c in combos if not any(all(c.get(k) == v for k, v in ex.items()) for ex in exclude)]
+    for inc in include:
+        orig = {k: v for k, v in inc.items() if k in keys}
+        matched = [c for c in combos if all(c[k] == v for k, v in orig.items())] if orig else []
+        if matched:
+            for c in matched:
+                c.update(inc)
+        else:
+            combos.append(dict(inc))
+    return combos
+
+matrix = {
+    "os": ["ubuntu", "windows", "macos"],
+    "python": ["3.11", "3.12", "3.13"],
+    "exclude": [{"os": "macos", "python": "3.11"}],
+    "include": [{"os": "ubuntu", "python": "3.14", "experimental": True}],
+}
+jobs = expand_matrix(matrix)
+print(len(jobs))
+for j in jobs:
+    print(j["os"] + "/" + j["python"] + (" (experimental)" if j.get("experimental") else ""))
+```
+
+3x3 = 9 combinations, minus macos/3.11, plus an include for 3.14 that matches no existing cell and therefore becomes a new job: 9. Verified by running the solution.
+</code></pre></div>
+<h3 id="critical-path-and-billed-minutes">Critical path and billed minutes<a class="headerlink" href="#critical-path-and-billed-minutes" title="Permanent link">&para;</a></h3>
+<p>Given the job graph, compute the critical path (the longest chain of dependent jobs, in minutes) and the total billed minutes (minutes x matrix cells summed over all jobs).</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>JOBS = {
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    "lint":   {"minutes": 1,  "cells": 1, "needs": []},
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    "build":  {"minutes": 4,  "cells": 1, "needs": []},
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    "unit":   {"minutes": 6,  "cells": 3, "needs": ["build"]},
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    "e2e":    {"minutes": 12, "cells": 1, "needs": ["build"]},
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    "deploy": {"minutes": 2,  "cells": 1, "needs": ["unit", "e2e"]},
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>}
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>def critical_path(jobs):
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    # longest chain of dependent jobs: return (total minutes, [job names in order])
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    return 0, []
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>def billed(jobs):
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    # compute minutes: sum of minutes x cells over every job
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    return 0
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>length, path = critical_path(JOBS)
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>print("critical path: %.1f minutes  %s" % (length, " -&gt; ".join(path)))
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>print("billed minutes:", billed(JOBS))
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>critical path: 18.0 minutes  build -&gt; e2e -&gt; deploy
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>billed minutes: 37
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+JOBS = {
+    "lint":   {"minutes": 1,  "cells": 1, "needs": []},
+    "build":  {"minutes": 4,  "cells": 1, "needs": []},
+    "unit":   {"minutes": 6,  "cells": 3, "needs": ["build"]},
+    "e2e":    {"minutes": 12, "cells": 1, "needs": ["build"]},
+    "deploy": {"minutes": 2,  "cells": 1, "needs": ["unit", "e2e"]},
+}
+
+def finish_times(jobs):
+    done = {}
+    def finish(name):
+        if name not in done:
+            start = max((finish(n) for n in jobs[name]["needs"]), default=0)
+            done[name] = start + jobs[name]["minutes"]
+        return done[name]
+    for n in jobs:
+        finish(n)
+    return done
+
+def critical_path(jobs):
+    done = finish_times(jobs)
+    end = max(done, key=done.get)
+    path = [end]
+    while jobs[path[-1]]["needs"]:
+        path.append(max(jobs[path[-1]]["needs"], key=lambda n: done[n]))
+    return done[end], list(reversed(path))
+
+def billed(jobs):
+    return sum(j["minutes"] * j["cells"] for j in jobs.values())
+
+length, path = critical_path(JOBS)
+print("critical path: %.1f minutes  %s" % (length, " -&gt; ".join(path)))
+print("billed minutes:", billed(JOBS))
+```
+
+build (4) -&amp;gt; e2e (12) -&amp;gt; deploy (2) = 18 minutes of waiting, while billed time is lint 1 + build 4 + unit 6x3 + e2e 12 + deploy 2 = 37. Verified by running the solution.
+</code></pre></div>
+<hr />
+<p>More free practice: the <a href="../">CI/CD Mastery Path</a> curriculum, the <a href="https://learnmasterypath.com/interview-pack/">Interview Prep Pack</a> and the <a href="https://learnmasterypath.com/resume/">free resume ATS check</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+  <nav class="mp-related" aria-label="Related free courses">
+    <h2>Related free courses</h2>
+    <ul>
+      <li><a href="https://learnmasterypath.com/server-ops-mastery-path/">Server Ops</a></li><li><a href="https://learnmasterypath.com/linux-mastery-path/">Linux</a></li><li><a href="https://learnmasterypath.com/nodemcu-mastery-path/">NodeMCU/IoT</a></li><li><a href="https://learnmasterypath.com/terraform-mastery-path/">Terraform</a></li><li><a href="https://learnmasterypath.com/kubernetes-mastery-path/">Kubernetes</a></li>
+      <li><a href="https://learnmasterypath.com/">All 100+ courses &rarr;</a></li>
+    </ul>
+  </nav>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../cheat-sheet/" class="md-footer__link md-footer__link--next" aria-label="Next: Cheat Sheet">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Cheat Sheet
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <div class="mp-foot">
+    <div class="mp-foot-inner">
+      <a class="mp-foot-brand" href="https://learnmasterypath.com/"><svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg><span>Mastery Path</span></a>
+      <nav class="mp-sitelinks" aria-label="Site and legal links">
+        <a href="https://learnmasterypath.com/">All courses</a>
+        <a href="https://learnmasterypath.com/about.html">About</a>
+        <a href="https://learnmasterypath.com/contact.html">Contact</a>
+        <a href="https://learnmasterypath.com/cicd-mastery-path/privacy/">Privacy Policy</a>
+        <a href="https://learnmasterypath.com/terms.html">Terms</a>
+        <a href="https://learnmasterypath.com/cicd-mastery-path/license/">License</a>
+        <a href="https://learnmasterypath.com/verify/">Verify a certificate</a>
+      </nav>
+    </div>
+    <p class="mp-license-note">
+      © 2026 Vinod Kumar Sigilipelli · Except where otherwise noted, lesson content is licensed under
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and code examples under the
+      <a href="https://opensource.org/license/mit">MIT License</a>.
+    </p>
+  </div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/progress-tracker.js"></script>
+      
+        <script src="../javascripts/final-quiz.js"></script>
+      
+    
+  </body>
+</html>
