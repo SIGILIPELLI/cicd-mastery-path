@@ -1,6 +1,6 @@
 ---
 title: "Free CI/CD Course: GitHub Actions, Jenkins, Pipelines, Testing Gates, Deployment Strategies, GitOps and Supply-Chain Security"
-description: "Free CI/CD course: 36 lessons and 4 projects on pipelines, GitHub Actions, Jenkins, caching, flaky tests, deployment strategies, GitOps, supply-chain security and scale."
+description: "Free CI/CD course: 36 lessons, 3 projects and 1 capstone on pipelines, GitHub Actions, Jenkins, caching, flaky tests, deployment strategies, GitOps, supply-chain security and scale."
 ---
 
 # CI/CD Mastery Path
@@ -31,7 +31,7 @@ Every lesson has a **How It Actually Works** section: why two identical tarballs
 | **3 · Delivery & Release Engineering** | Deployment strategies, flags, migrations, rollbacks, IaC, GitOps, releases, supply chain, DORA | 10 | Ship changes safely and undo them when needed |
 | **4 · Pipelines at Scale** | Threat model, speed and cost, Jenkins and Actions at scale, audit, testing pipelines, incidents, migration, golden paths | 10 | Run delivery as a platform for many teams |
 
-Each level has 9 teaching modules plus a hands-on project (module 10), which makes **36 lessons and 4 projects** in total.
+Each level has 9 teaching modules plus a hands-on project (module 10), which makes **36 lessons, 3 projects and 1 capstone** in total.
 
 ## How to use this site
 
